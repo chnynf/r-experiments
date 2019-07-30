@@ -7,7 +7,7 @@ DoSomething <- function(row) {
   someCalculation <- row[["v1"]] + 1
 }
 
-# The most efficient way is to use apply. However vectorizing is not always an option.
+# The most efficient way is to use apply.
 # Sometimes the syntax is less clean when the function performed involves lots of local variables and assignments.
 > system.time(apply(allIterations, 1, DoSomething))
    user  system elapsed 
